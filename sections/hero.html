@@ -1,0 +1,134 @@
+<section
+    class="relative bg-gradient-to-br from-slate-900 via-brand-950 to-slate-900 text-white py-20 lg:py-32 overflow-hidden">
+    <div
+        class="absolute inset-0 opacity-10 bg-[radial-gradient(#22c55e_1px,transparent_1px)] [background-size:16px_16px]">
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid lg:grid-cols-12 gap-12 items-center">
+
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+            <div
+                class="inline-flex items-center gap-2 bg-brand-500/10 border border-brand-500/20 text-brand-400 px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide">
+                <i class="fa-solid fa-certificate"></i> Dubai's #1 Rated Pest Control Company
+            </div>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                100% Pest-Free Homes & Offices in <span
+                    class="text-brand-400 underline decoration-brand-500/50">Dubai</span>
+            </h1>
+            <p class="text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 font-normal">
+                Eco-friendly, odorless, and Dubai Municipality approved extermination services for villas,
+                apartments, and commercial facilities. Safe for children and pets with guaranteed results.
+            </p>
+
+            <!-- Trust Badges -->
+            <div class="grid grid-cols-3 gap-4 pt-4 max-w-lg mx-auto lg:mx-0">
+                <div class="bg-white/5 border border-white/10 p-3 rounded-xl text-center">
+                    <div class="text-2xl font-black text-brand-400">100%</div>
+                    <div class="text-xs text-slate-400 mt-1">Results Guaranteed</div>
+                </div>
+                <div class="bg-white/5 border border-white/10 p-3 rounded-xl text-center">
+                    <div class="text-2xl font-black text-brand-400">60 Min</div>
+                    <div class="text-xs text-slate-400 mt-1">Rapid Response</div>
+                </div>
+                <div class="bg-white/5 border border-white/10 p-3 rounded-xl text-center">
+                    <div class="text-2xl font-black text-brand-400">24/7</div>
+                    <div class="text-xs text-slate-400 mt-1">Emergency Support</div>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                <a href="#booking"
+                    class="w-full sm:w-auto bg-brand-500 hover:bg-brand-600 text-white px-8 py-4 rounded-xl font-bold text-base transition shadow-xl shadow-brand-500/20 flex items-center justify-center gap-3">
+                    <i class="fa-solid fa-bolt text-lg"></i> Book Inspection Now
+                </a>
+                <a href="tel:+971563269418"
+                    class="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white border border-white/20 px-8 py-4 rounded-xl font-bold text-base transition flex items-center justify-center gap-3">
+                    <i class="fa-solid fa-phone-volume text-brand-400"></i> Call Expert
+                </a>
+            </div>
+        </div>
+
+        <!-- Quick Booking Card in Hero -->
+        <div class="lg:col-span-5 bg-white text-slate-800 p-6 sm:p-8 rounded-3xl shadow-2xl border border-slate-100">
+
+            <div class="text-center pb-6 border-b border-slate-100">
+                <h3 class="text-xl font-bold text-slate-900">
+                    Get Immediate Pest Relief
+                </h3>
+
+                <p class="text-xs text-slate-500 mt-1">
+                    Fill out the form & get a callback within 5 minutes
+                </p>
+            </div>
+
+            <form id="hero-booking-form" class="space-y-4 pt-6" onsubmit="handleQuickSubmit(event)">
+
+                <!-- Name -->
+                <div>
+                    <label for="hero-name" class="block text-xs font-bold text-slate-700 uppercase mb-1">
+                        Your Full Name
+                    </label>
+
+                    <input type="text" id="hero-name" required placeholder="Ahmed"
+                        class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none transition">
+                </div>
+
+                <!-- Phone -->
+                <div>
+                    <label for="hero-phone" class="block text-xs font-bold text-slate-700 uppercase mb-1">
+                        UAE Phone Number
+                    </label>
+
+                    <input type="tel" id="hero-phone" required placeholder="+971 5X XXX XXXX"
+                        class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none transition">
+                </div>
+
+                <!-- Pest Problem -->
+                <div>
+                    <label for="hero-pest" class="block text-xs font-bold text-slate-700 uppercase mb-1">
+                        Select Pest Problem
+                    </label>
+
+                    <select id="hero-pest" required
+                        class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none transition">
+                        <option value="Bed Bugs Eradication">
+                            Bed Bugs Eradication
+                        </option>
+
+                        <option value="Cockroach Treatment">
+                            Cockroach Treatment
+                        </option>
+
+                        <option value="Termite Pre/Post Construction">
+                            Termite Pre/Post Construction
+                        </option>
+
+                        <option value="Rodent & Rat Control">
+                            Rodent & Rat Control
+                        </option>
+
+                        <option value="Mosquito & Fly Control">
+                            Mosquito & Fly Control
+                        </option>
+
+                        <option value="General Pest Package">
+                            General Pest Package
+                        </option>
+                    </select>
+                </div>
+
+                <!-- Submit -->
+                <button type="submit" id="hero-submit-btn"
+                    class="w-full bg-brand-600 hover:bg-brand-700 text-white font-bold py-4 rounded-xl shadow-lg shadow-brand-600/30 transition text-base flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    Request Free Consultation
+                </button>
+
+                <p class="text-[11px] text-center text-slate-400">
+                    <i class="fa-solid fa-lock text-emerald-500 mr-1"></i>
+                    Your information is secure. No spam guaranteed.
+                </p>
+
+            </form>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dubai Pest Control | Municipality Approved Exterminators</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            900: '#14532d',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- ==================== SITE HEADER ==================== -->
+    <div id="site-header"></div>
+
+    <!-- ==================== PAGE SECTIONS ==================== -->
+    <main>
+        <div id="section-hero"></div>
+        <div id="section-services"></div>
+        <div id="section-areas"></div>
+        <div id="section-calculator"></div>
+
+        <div id="section-why-us"></div>
+
+        <div id="section-booking"></div>
+        <div id="section-reviews"></div>
+    </main>
+
+    <!-- ==================== SITE FOOTER ==================== -->
+    <div id="site-footer"></div>
+
+    <!-- ==================== GLOBAL MODAL ==================== -->
+    <div id="site-modal"></div>
+
+    <!-- ==================== COMPONENT LOADER ==================== -->
+    <!-- ==================== COMPONENT LOADER ==================== -->
+    <script>
+        const components = {
+            'site-header': 'components/header.html',
+            'section-hero': 'sections/hero.html',
+            'section-calculator': 'sections/calculator.html',
+            'section-services': 'sections/services.html',
+            'section-why-us': 'sections/why-us.html',
+            'section-areas': 'sections/areas.html',
+            'section-booking': 'sections/booking.html',
+            'section-reviews': 'sections/reviews.html',
+            'site-footer': 'components/footer.html',
+            'site-modal': 'components/modal.html'
+        };
+
+        async function loadComponent(elementId, filePath) {
+            const element = document.getElementById(elementId);
+
+            try {
+                const response = await fetch(filePath);
+
+                if (!response.ok) {
+                    throw new Error(`Failed to load ${filePath}`);
+                }
+
+                element.innerHTML = await response.text();
+            } catch (error) {
+                console.error(error);
+                element.innerHTML = '';
+            }
+        }
+
+        async function loadSiteComponents() {
+            await Promise.all(
+                Object.entries(components).map(([elementId, filePath]) =>
+                    loadComponent(elementId, filePath)
+                )
+            );
+
+            initializeShieldGuard();
+        }
+
+        function initializeShieldGuard() {
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (mobileMenuBtn && mobileMenu) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+
+            if (typeof calculatePrice === 'function') {
+                calculatePrice();
+            }
+
+            // INITIALIZE SCROLL SPY HERE AFTER SECTIONS ARE LOADED INTO DOM
+            if (typeof setupScrollSpy === 'function') {
+                setupScrollSpy();
+            }
+        }
+
+        loadSiteComponents();
+    </script>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

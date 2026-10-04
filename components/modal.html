@@ -1,0 +1,82 @@
+<!-- Custom Modal for Notifications (No alert() used) -->
+    <div id="custom-modal"
+        class="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm hidden">
+        <div
+            class="bg-white rounded-3xl p-8 max-w-md w-full mx-4 shadow-2xl text-center space-y-4 animate-in fade-in zoom-in duration-200">
+            <div
+                class="w-16 h-16 bg-brand-100 text-brand-600 rounded-full flex items-center justify-center text-3xl mx-auto">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-slate-900" id="modal-title">Request Received!</h3>
+            <p class="text-slate-600 text-sm" id="modal-desc">Thank you! One of our Dubai pest control specialists will
+                call you within 5 minutes to confirm your appointment.</p>
+            <button onclick="closeModal()"
+                class="w-full bg-brand-600 hover:bg-brand-700 text-white font-bold py-3.5 rounded-xl shadow-md transition">
+                Okay, Got It
+            </button>
+        </div>
+    </div>
+
+    <!-- JavaScript Interactivity -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Calculator State
+        let currentPropType = 'apartment';
+        function setPropertyType(type, btn) {
+            currentPropType = type;
+            document.querySelectorAll('.calc-prop-btn').forEach(b => {
+                b.classList.remove('border-brand-600', 'bg-brand-50', 'text-brand-800');
+                b.classList.add('border-slate-200', 'bg-white', 'text-slate-700');
+            });
+            btn.classList.remove('border-slate-200', 'bg-white', 'text-slate-700');
+            btn.classList.add('border-brand-600', 'bg-brand-50', 'text-brand-800');
+            calculatePrice();
+        }
+
+        function calculatePrice() {
+            const size = document.getElementById('calc-size').value;
+            const pest = document.getElementById('calc-pest').value;
+
+            let base = 199;
+            if (currentPropType === 'villa') base = 349;
+
+            if (size === '2bh') base += 80;
+            if (size === '3bh') base += 160;
+            if (size === 'large') base += 300;
+
+            if (pest === 'bedbugs') base += 150;
+            if (pest === 'termites') base += 400;
+            if (pest === 'rodents') base += 100;
+
+            document.getElementById('calc-price-display').innerText = `AED ${base}`;
+        }
+
+        // Form Submission Handlers
+        function handleQuickSubmit(e) {
+            e.preventDefault();
+            showModal("Booking Request Received!", "Thank you! Our Dubai emergency team has received your details and is calling you right now.");
+            e.target.reset();
+        }
+
+        function handleBookingSubmit(e) {
+            e.preventDefault();
+            showModal("Inspection Scheduled!", "Your appointment has been successfully booked with ShieldGuard Dubai. We have sent a confirmation on WhatsApp & SMS.");
+            e.target.reset();
+        }
+
+        function showModal(title, desc) {
+            document.getElementById('modal-title').innerText = title;
+            document.getElementById('modal-desc').innerText = desc;
+            document.getElementById('custom-modal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('custom-modal').classList.add('hidden');
+        }
+    </script>

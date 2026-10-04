@@ -1,0 +1,72 @@
+<section id="calculator" class="py-16 bg-white border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+            <span
+                class="text-brand-600 font-bold text-xs uppercase tracking-widest bg-brand-50 px-3 py-1 rounded-full border border-brand-100">Transparent
+                Pricing</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">Interactive Cost Estimator</h2>
+            <p class="text-slate-600 mt-2 text-sm sm:text-base">Calculate estimated pricing for Dubai apartments and
+                villas instantly.</p>
+        </div>
+
+        <div
+            class="bg-slate-50 border border-slate-200 rounded-3xl p-6 sm:p-10 max-w-4xl mx-auto shadow-sm grid md:grid-cols-2 gap-8 items-center">
+            <div class="space-y-6">
+                <div>
+                    <label class="block text-sm font-bold text-slate-700 mb-2">1. Select Property Type</label>
+                    <div class="grid grid-cols-2 gap-3">
+                        <button type="button" onclick="setPropertyType('apartment', this)"
+                            class="calc-prop-btn border-2 border-brand-600 bg-brand-50 text-brand-800 font-semibold p-3 rounded-xl text-sm transition text-center">Apartment</button>
+                        <button type="button" onclick="setPropertyType('villa', this)"
+                            class="calc-prop-btn border-2 border-slate-200 bg-white text-slate-700 font-semibold p-3 rounded-xl text-sm transition text-center">Villa
+                            / Townhouse</button>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-bold text-slate-700 mb-2">2. Select Property Size</label>
+                    <select id="calc-size" onchange="calculatePrice()"
+                        class="w-full bg-white border border-slate-300 rounded-xl px-4 py-3 text-sm font-medium focus:ring-2 focus:ring-brand-500 focus:outline-none">
+                        <option value="studio">Studio / 1 BHK</option>
+                        <option value="2bh">2 BHK Apartment</option>
+                        <option value="3bh">3 BHK Apartment / Small Villa</option>
+                        <option value="large">4+ BHK Villa / Large Property</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-bold text-slate-700 mb-2">3. Select Main Pest Concern</label>
+                    <select id="calc-pest" onchange="calculatePrice()"
+                        class="w-full bg-white border border-slate-300 rounded-xl px-4 py-3 text-sm font-medium focus:ring-2 focus:ring-brand-500 focus:outline-none">
+                        <option value="general">General Pest Control (Cockroaches, Ants, Silverfish)</option>
+                        <option value="bedbugs">Bed Bugs Intensive Steam & Spray Treatment</option>
+                        <option value="termites">Termite Prevention Barrier</option>
+                        <option value="rodents">Rodent & Mouse Baiting System</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="bg-brand-900 text-white p-8 rounded-2xl flex flex-col justify-between h-full shadow-lg">
+                <div>
+                    <div class="text-xs uppercase font-bold text-brand-400 tracking-wider">Estimated Investment
+                    </div>
+                    <div class="text-4xl sm:text-5xl font-black mt-2" id="calc-price-display">AED 199</div>
+                    <p class="text-xs text-slate-300 mt-2">*Includes inspection, eco-friendly treatment, and 3 to 6
+                        months written warranty.</p>
+                </div>
+
+                <div class="pt-8 border-t border-brand-800 mt-6 space-y-3">
+                    <div class="flex items-center gap-2 text-xs text-brand-200"><i
+                            class="fa-solid fa-check text-brand-400"></i> Dubai Municipality Approved Chemicals
+                    </div>
+                    <div class="flex items-center gap-2 text-xs text-brand-200"><i
+                            class="fa-solid fa-check text-brand-400"></i> Odorless & Safe for Pets/Kids</div>
+                    <a href="#booking"
+                        class="w-full block bg-brand-500 hover:bg-brand-600 text-white text-center font-bold py-3.5 rounded-xl transition shadow-md text-sm mt-4">
+                        Book With This Estimate
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

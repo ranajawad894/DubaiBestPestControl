@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Dubai Best Pest Control</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Custom Brand Theme Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            300: '#6ee7b7',
+                            400: '#34d399',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#065f46',
+                            900: '#14532d',
+                            950: '#022c22'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-slate-50 text-slate-800 antialiased font-sans flex flex-col min-h-screen pt-28">
+
+    <!-- Provided Header Section -->
+    <div class="fixed top-0 z-50 w-full shadow-sm">
+        <!-- Top Announcement Bar -->
+        <div class="bg-brand-900 text-white text-xs sm:text-sm py-2 px-4">
+            <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+                <div class="flex items-center gap-4">
+                    <span class="hidden md:inline"><i class="fa-solid fa-clock mr-1"></i> 24/7 Emergency Pest Services
+                        across Dubai</span>
+                </div>
+                <div class="flex items-center gap-4 font-semibold">
+                    <a href="tel:+971563269418" class="hover:text-brand-300 transition flex items-center gap-1.5">
+                        <i class="fa-solid fa-phone text-brand-400"></i> +971 56 326 9418
+                    </a>
+                    <a href="index.html#booking"
+                        class="bg-brand-500 hover:bg-brand-600 text-white px-3 py-1 rounded-full text-xs font-bold transition shadow-sm">
+                        Book Online
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Header -->
+        <header class="bg-white/95 backdrop-blur-md border-b border-slate-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+                <a href="index.html" class="flex items-center gap-3">
+                    <div
+                        class="w-12 h-12 bg-brand-600 rounded-xl flex items-center justify-center text-white text-2xl font-black shadow-md shadow-brand-600/20">
+                        <i class="fa-solid fa-bug-slash"></i>
+                    </div>
+                    <div>
+                        <span class="text-xl font-extrabold tracking-tight text-slate-900 block leading-none">DUBAI<span
+                                class="text-brand-600"> BEST</span></span>
+                        <span class="text-xs font-semibold uppercase tracking-widest text-slate-500 mt-1 block">Pest
+                            Control
+                        </span>
+                    </div>
+                </a>
+
+                <nav class="hidden lg:flex items-center gap-8 font-medium text-sm text-slate-600">
+                    <a href="index.html#services" class="hover:text-brand-600 transition">Services</a>
+                    <a href="index.html#areas" class="hover:text-brand-600 transition">Service Areas</a>
+                    <a href="index.html#calculator" class="hover:text-brand-600 transition">Instant Quote</a>
+                    <a href="index.html#why-us" class="hover:text-brand-600 transition">Why Chooses Us</a>
+                    <a href="index.html#reviews" class="hover:text-brand-600 transition">Reviews</a>
+                </nav>
+
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/971563269418" target="_blank"
+                        class="bg-emerald-50 text-emerald-600 hover:bg-emerald-100 px-4 py-2.5 rounded-xl font-semibold text-sm transition flex items-center gap-2 border border-emerald-200">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp
+                    </a>
+                    <a href="index.html#booking"
+                        class="bg-brand-600 hover:bg-brand-700 text-white px-5 py-2.5 rounded-xl font-semibold text-sm transition shadow-lg shadow-brand-600/25 flex items-center gap-2">
+                        <i class="fa-solid fa-calendar-check"></i> Schedule Inspection
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Toggle Button -->
+                <button id="mobile-menu-btn" class="lg:hidden text-slate-700 text-2xl focus:outline-none p-2">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3">
+                <a href="index.html#services"
+                    class="block py-2 text-slate-700 font-medium hover:text-brand-600">Services</a>
+                <a href="index.html#calculator"
+                    class="block py-2 text-slate-700 font-medium hover:text-brand-600">Instant Quote</a>
+                <a href="index.html#why-us" class="block py-2 text-slate-700 font-medium hover:text-brand-600">Why Dubai
+                    Chooses
+                    Us</a>
+                <a href="index.html#areas" class="block py-2 text-slate-700 font-medium hover:text-brand-600">Service
+                    Areas</a>
+                <a href="index.html#reviews"
+                    class="block py-2 text-slate-700 font-medium hover:text-brand-600">Reviews</a>
+                <div class="pt-4 flex flex-col gap-2">
+                    <a href="https://wa.me/971563269418"
+                        class="w-full bg-emerald-50 text-emerald-600 text-center py-3 rounded-xl font-semibold flex items-center justify-center gap-2 border border-emerald-200">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> Chat on WhatsApp
+                    </a>
+                    <a href="index.html#booking"
+                        class="w-full bg-brand-600 text-white text-center py-3 rounded-xl font-semibold shadow-md">
+                        Schedule Inspection
+                    </a>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow">
+        <!-- Hero Header for Privacy Policy -->
+        <section class="bg-brand-950 text-white py-16 px-4 relative overflow-hidden">
+            <div
+                class="absolute inset-0 opacity-10 bg-[radial-gradient(#10b981_1px,transparent_1px)] [background-size:16px_16px]">
+            </div>
+            <div class="max-w-4xl mx-auto text-center relative z-10 space-y-4">
+                <span
+                    class="bg-brand-500/20 text-brand-400 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full border border-brand-500/30 inline-block">Data
+                    Protection & Privacy</span>
+                <h1 class="text-3xl sm:text-5xl font-black tracking-tight">Privacy Policy</h1>
+                <p class="text-slate-400 text-sm sm:text-base max-w-2xl mx-auto">
+                    Dubai Best Pest Control is committed to protecting your personal information and privacy in
+                    compliance with UAE data regulations and standard industry practices.
+                </p>
+                <p class="text-xs text-slate-500">Last Updated: October 2026</p>
+            </div>
+        </section>
+
+        <!-- Document Content -->
+        <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div
+                class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 sm:p-12 space-y-10 text-slate-700 leading-relaxed">
+
+                <!-- Section 1 -->
+                <div class="space-y-3">
+                    <h2 class="text-xl sm:text-2xl font-bold text-slate-900 flex items-center gap-3">
+                        <span
+                            class="w-8 h-8 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center text-sm font-bold border border-brand-200">1</span>
+                        Information We Collect
+                    </h2>
+                    <p class="text-sm sm:text-base text-slate-600 pl-11">
+                        When you interact with <strong>Dubai Best Pest Control</strong> via our website, telephone,
+                        WhatsApp, or booking forms, we may collect personal data necessary to provide reliable pest
+                        management services. This includes:
+                    </p>
+                    <ul class="list-disc list-inside pl-11 space-y-1 text-sm sm:text-base text-slate-600">
+                        <li>Full name, contact phone numbers, and WhatsApp contact details.</li>
+                        <li>Property address in Dubai or UAE (villa number, building name, area, emirate) for
+                            dispatching technicians.</li>
+                        <li>Email address for sending invoices, quotations, and warranty confirmations.</li>
+                        <li>Information regarding your specific pest infestation type, property scale, and preferred
+                            appointment slots.</li>
+                    </ul>
+                </div>
+
+                <!-- Section 2 -->
+                <div class="space-y-3">
+                    <h2 class="text-xl sm:text-2xl font-bold text-slate-900 flex items-center gap-3">
+                        <span
+                            class="w-8 h-8 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center text-sm font-bold border border-brand-200">2</span>
+                        How We Use Your Information
+                    </h2>
+                    <p class="text-sm sm:text-base text-slate-600 pl-11">
+                        We use the collected information strictly for operational and customer service purposes,
+                        including:
+                    </p>
+                    <ul class="list-disc list-inside pl-11 space-y-1 text-sm sm:text-base text-slate-600">
+                        <li>Scheduling, confirming, and dispatching certified pest control technicians to your property.
+                        </li>
+                        <li>Communicating service updates, pricing estimates, and follow-up reminders.</li>
+                        <li>Issuing official payment receipts and maintaining service warranty records.</li>
+                        <li>Improving our website performance, user experience, and customer support response times.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Section 3 -->
+                <div class="space-y-3">
+                    <h2 class="text-xl sm:text-2xl font-bold text-slate-900 flex items-center gap-3">
+                        <span
+                            class="w-8 h-8 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center text-sm font-bold border border-brand-200">3</span>
+                        Data Protection & Security in Dubai
+                    </h2>
+                    <p class="text-sm sm:text-base text-slate-600 pl-11">
+                        We implement rigorous administrative, technical, and physical security measures to safeguard
+                        your personal information against unauthorized access, alteration, disclosure, or destruction.
+                        Customer data is stored securely on protected servers and is accessible only by authorized
+                        administrative and operations personnel.
+                    </p>
+                </div>
+
+                <!-- Section 4 -->
+                <div class="space-y-3">
+                    <h2 class="text-xl sm:text-2xl font-bold text-slate-900 flex items-center gap-3">
+                        <span
+                            class="w-8 h-8 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center text-sm font-bold border border-brand-200">4</span>
+                        Cookies and Tracking Technologies
+                    </h2>
+                    <p class="text-sm sm:text-base text-slate-600 pl-11">
+                        Our website uses cookies and similar digital trackers to enhance browsing convenience, analyze
+                        site traffic, and remember your preferences. You can choose to disable cookies through your
+                        browser settings, though doing so may affect certain interactive elements of our instant quote
+                        calculator and booking features.
+                    </p>
+                </div>
+
+                <!-- Section 5 -->
+                <div class="space-y-3">
+                    <h2 class="text-xl sm:text-2xl font-bold text-slate-900 flex items-center gap-3">
+                        <span
+                            class="w-8 h-8 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center text-sm font-bold border border-brand-200">5</span>
+                        Sharing of Information with Third Parties
+                    </h2>
+                    <p class="text-sm sm:text-base text-slate-600 pl-11">
+                        We do not sell, trade, or rent your personal data to third parties. Your information is shared
+                        only with trusted field operators or payment processors strictly involved in fulfilling your
+                        pest control service request, or when required by Dubai regulatory authorities under UAE law.
+                    </p>
+                </div>
+
+                <!-- Section 6 -->
+                <div class="space-y-3">
+                    <h2 class="text-xl sm:text-2xl font-bold text-slate-900 flex items-center gap-3">
+                        <span
+                            class="w-8 h-8 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center text-sm font-bold border border-brand-200">6</span>
+                        Your Privacy Rights
+                    </h2>
+                    <p class="text-sm sm:text-base text-slate-600 pl-11">
+                        You have the right to request access to the personal data we hold about you, request corrections
+                        to inaccurate information, or ask for the deletion of your records from our active database by
+                        contacting us directly.
+                    </p>
+                </div>
+
+                <!-- Section 7 -->
+                <div class="space-y-3">
+                    <h2 class="text-xl sm:text-2xl font-bold text-slate-900 flex items-center gap-3">
+                        <span
+                            class="w-8 h-8 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center text-sm font-bold border border-brand-200">7</span>
+                        Contact Us
+                    </h2>
+                    <p class="text-sm sm:text-base text-slate-600 pl-11">
+                        If you have any questions, concerns, or requests regarding this Privacy Policy, please get in
+                        touch with our team:
+                    </p>
+                    <div class="pl-11 pt-2 space-y-2 text-sm text-slate-700 font-medium">
+                        <p><i class="fa-solid fa-location-dot text-brand-600 mr-2"></i> Sheikh Zayed Road, Al Quoz
+                            Industrial Area 3, Dubai, UAE</p>
+                        <p><i class="fa-solid fa-phone text-brand-600 mr-2"></i> <a href="tel:+971563269418"
+                                class="hover:underline">+971 56 326 9418</a></p>
+                        <p><i class="fa-solid fa-envelope text-brand-600 mr-2"></i> info@dubaibestpestcontrol.com</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Provided Footer Section -->
+    <footer class="bg-slate-950 text-white pt-16 pb-12 border-t border-slate-800">
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 lg:grid-cols-4 gap-12 pb-12 border-b border-slate-800">
+            <div class="space-y-4">
+                <div class="flex items-center gap-3">
+                    <div
+                        class="w-10 h-10 bg-brand-600 rounded-xl flex items-center justify-center text-white text-xl font-black">
+                        <i class="fa-solid fa-bug-slash"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-xl font-extrabold tracking-tight text-white block leading-none">DUBAI<span
+                                class="text-brand-600"> BEST</span></span>
+                        <span class="text-xs font-semibold uppercase tracking-widest text-slate-500 mt-0.5 block">Pest
+                            Control</span>
+                    </div>
+                </div>
+                <p class="text-slate-400 text-xs leading-relaxed">
+                    Dubai’s trusted leader in eco-friendly pest control, bed bug eradication, and commercial sanitation
+                    services.
+                </p>
+                <div class="text-xs text-brand-400 font-semibold"><i class="fa-solid fa-shield-halved mr-1"></i> Trusted
+                    by
+                    UAE People
+                </div>
+            </div>
+
+            <div>
+                <h4 class="text-sm font-bold uppercase tracking-wider text-slate-300 mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-sm text-slate-400">
+                    <li><a href="index.html#services" class="hover:text-white transition">Pest Services</a></li>
+                    <li><a href="index.html#calculator" class="hover:text-white transition">Instant Price Calculator</a>
+                    </li>
+                    <li><a href="index.html#why-us" class="hover:text-white transition">Why Choose Us</a></li>
+                    <li><a href="index.html#areas" class="hover:text-white transition">Service Areas in Dubai</a></li>
+                    <li><a href="index.html#reviews" class="hover:text-white transition">Customer Reviews</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-sm font-bold uppercase tracking-wider text-slate-300 mb-4">Pest Directory</h4>
+                <ul class="space-y-2 text-sm text-slate-400">
+                    <li><a href="index.html#services" class="hover:text-white transition">Bed Bug Extermination</a></li>
+                    <li><a href="index.html#services" class="hover:text-white transition">Cockroach Control</a></li>
+                    <li><a href="index.html#services" class="hover:text-white transition">Termite Prevention</a></li>
+                    <li><a href="index.html#services" class="hover:text-white transition">Rodent Baiting</a></li>
+                    <li><a href="index.html#services" class="hover:text-white transition">Mosquito Fogging</a></li>
+                </ul>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="text-sm font-bold uppercase tracking-wider text-slate-300 mb-2">Contact Dubai Office</h4>
+                <p class="text-slate-400 text-xs">Sheikh Zayed Road, Al Quoz Industrial Area 3, Dubai, UAE</p>
+                <p class="text-slate-400 text-xs">
+                    <a href="tel:+971563269418" class="hover:underline">
+                        <i class="fa-solid fa-phone text-brand-400 mr-2"></i> +971 56 326 9418
+                    </a>
+                </p>
+                <p class="text-slate-400 text-xs"><i class="fa-solid fa-envelope text-brand-400 mr-2"></i>
+                    info@dubaibestpestcontrol.com</p>
+                <div class="flex gap-3 pt-2">
+                    <a href="#"
+                        class="w-9 h-9 bg-white/10 hover:bg-brand-600 rounded-full flex items-center justify-center transition text-sm"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"
+                        class="w-9 h-9 bg-white/10 hover:bg-brand-600 rounded-full flex items-center justify-center transition text-sm"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+            <p>&copy; 2026 Dubai Best Pest Control. All Rights Reserved.</p>
+            <p class="text-slate-400">
+                Designed by
+                <a href="https://wa.me/923433315082" target="_blank"
+                    class="font-semibold text-emerald-400 hover:text-emerald-300 transition-all duration-200 underline-offset-4 decoration-emerald-500/50 hover:decoration-emerald-300 inline-block hover:scale-105 active:scale-95">
+                    ⚡Rana Jawad⚡
+                </a>
+            </p>
+            <div class="flex gap-6">
+                <a href="privacy.html" class="hover:underline text-brand-400 font-semibold">Privacy Policy</a>
+                <a href="terms.html" class="hover:underline">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
