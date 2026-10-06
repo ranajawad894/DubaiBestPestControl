@@ -4,7 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dubai Pest Control | Municipality Approved Exterminators</title>
+
+    <!-- ==================== SEO META TAGS ==================== -->
+    <title>Dubai Pest Control | Municipality Approved Exterminators 24/7</title>
+    <meta name="description"
+        content="Looking for reliable pest control in Dubai? 24/7 emergency service by municipality-approved exterminators for bed bugs, cockroaches, and rodents. Call for a free quote!">
+    <meta name="keywords"
+        content="Dubai pest control, pest control services Dubai, bed bug treatment Dubai, cockroach control, municipality approved pest control Dubai">
+    <meta name="author" content="Dubai Best Pest Control">
+    <link rel="canonical" href="https://dubaibestpestcontrol.online/">
+
+    <!-- ==================== OPEN GRAPH (SOCIAL & WHATSAPP SHARING) ==================== -->
+    <meta property="og:title" content="Dubai Pest Control | Municipality Approved Exterminators">
+    <meta property="og:description"
+        content="Fast, safe, and 24/7 municipality-approved pest control services across Dubai. Get rid of pests today!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dubaibestpestcontrol.online/">
+    <meta property="og:image" content="https://dubaibestpestcontrol.online/assets/images/og-image.jpg">
+
+    <!-- ==================== STRUCTURED DATA (LOCAL BUSINESS SCHEMA) ==================== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Dubai Pest Control",
+      "image": "https://dubaibestpestcontrol.online/assets/images/logo.png",
+      "@id": "https://dubaibestpestcontrol.online/",
+      "url": "https://dubaibestpestcontrol.online/",
+      "telephone": "+971501234567",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "324 Damascus Street, Al Qusais",
+        "addressLocality": "Dubai",
+        "addressRegion": "Dubai",
+        "postalCode": "00000",
+        "addressCountry": "AE"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Dubai, UAE"
+      }
+    }
+    </script>
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -65,7 +121,9 @@
     <!-- ==================== GLOBAL MODAL ==================== -->
     <div id="site-modal"></div>
 
-    <!-- ==================== COMPONENT LOADER ==================== -->
+    <!-- ==================== FLOATING CTA BUTTONS ==================== -->
+    <div id="site-cta"></div>
+
     <!-- ==================== COMPONENT LOADER ==================== -->
     <script>
         const components = {
@@ -78,7 +136,8 @@
             'section-booking': 'sections/booking.html',
             'section-reviews': 'sections/reviews.html',
             'site-footer': 'components/footer.html',
-            'site-modal': 'components/modal.html'
+            'site-modal': 'components/modal.html',
+            'site-cta': 'components/cta.html'
         };
 
         async function loadComponent(elementId, filePath) {
